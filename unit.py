@@ -2,8 +2,8 @@ import pygame
 import random
 
 # Constantes
-GRID_SIZE =  24             #Taille de la fenêtre en nombre de cellules
-CELL_SIZE = 30             #Taille des cellules
+GRID_SIZE =  20             #Taille de la fenêtre en nombre de cellules
+CELL_SIZE = 40             #Taille des cellules
 WIDTH = GRID_SIZE * CELL_SIZE
 HEIGHT = GRID_SIZE * CELL_SIZE
 FPS = 30
