@@ -31,12 +31,12 @@ class Game:
         self.screen = screen
         self.player_units = [Unit((GRID_SIZE/2)-2, 0, 10, 2, 'player'),
                              Unit((GRID_SIZE/2)-1, 0, 10, 2, 'player'),
-                             Unit((GRID_SIZE/2), 0, 10, 2, 'player'),
+                             Protagonist((GRID_SIZE/2), 0, 10, 2, 'player'),
                              Tower_Knight((GRID_SIZE/2)+1, 0, 10, 2, 'player')]
 
         self.enemy_units = [Unit((GRID_SIZE/2)-2, GRID_SIZE-1, 8, 1, 'enemy'),
                             Unit((GRID_SIZE/2)-1, GRID_SIZE-1, 8, 1, 'enemy'),
-                            Unit((GRID_SIZE/2), GRID_SIZE-1, 8, 1, 'enemy'),
+                            Tower_Knight((GRID_SIZE/2), GRID_SIZE-1, 8, 1, 'enemy'),
                             Protagonist((GRID_SIZE/2)+1, GRID_SIZE-1, 8, 1, 'enemy')]
 
     def handle_player_turn(self):
